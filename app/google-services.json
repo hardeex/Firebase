@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "805835177558",
+    "project_id": "store-b4699",
+    "storage_bucket": "store-b4699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805835177558:android:1b3e8133df97c2d5fc45f7",
+        "android_client_info": {
+          "package_name": "com.hardextech.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805835177558-khvugcv6soe8a0k328mj9r142u7h6rq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hardextech.store",
+            "certificate_hash": "0aa9238ac3170b1d8f64ed7eab549917e3083e7d"
+          }
+        },
+        {
+          "client_id": "805835177558-7429uufch7t31jba560tctchn45llouf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoIYnA2v_vLrl6QxXR-fEI8rt_ADTZlhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805835177558-7429uufch7t31jba560tctchn45llouf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

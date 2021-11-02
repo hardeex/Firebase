@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultTextSize">16sp</dimen>
+    <dimen name="sub_heading_text">12sp</dimen>
+    <dimen name="headerTextSize">20sp</dimen>
+    <dimen name="background_button_corner_radius">6</dimen>
+    <dimen name="login_activity_header_height">200dp</dimen>
+    <dimen name="boxStrokeWidthFocused">2dp</dimen>
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="marginStart">22dp</dimen>
+    <dimen name="marginEnd">22dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="paddingTop">8dp</dimen>
+    <dimen name="paddingBottom">8dp</dimen>
+   men>
+</resources>
