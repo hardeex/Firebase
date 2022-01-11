@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".activities.UserProfileActivity">
+    tools:context=".ui.activities.ui.activities.UserProfileActivity">
 
-
-
-        <ScrollView
+   <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:padding="@dimen/padding">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:orientation="vertical">
 
                 <FrameLayout
                     android:id="@+id/defaultProfilePic"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/userImage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/white_gray"
@@ -52,7 +41,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="@dimen/marginTop"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:focusableInTouchMode="true"
                     app:boxStrokeWidthFocused="2dp"
@@ -60,7 +48,8 @@
                     app:endIconTint="@color/black"
                     app:errorEnabled="true"
                     app:errorIconDrawable="@drawable/ic_error"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="@color/black"
+                    android:layout_margin="@dimen/margin">
 
                     <com.hardextech.store.utils.MyCustomEditText
                         android:layout_width="match_parent"
@@ -76,7 +65,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="@dimen/marginTop"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:focusableInTouchMode="true"
                     app:boxStrokeWidthFocused="2dp"
@@ -84,7 +72,8 @@
                     app:endIconTint="@color/black"
                     app:errorEnabled="true"
                     app:errorIconDrawable="@drawable/ic_error"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="@color/black"
+                    android:layout_margin="@dimen/margin">
 
                     <com.hardextech.store.utils.MyCustomEditText
                         android:layout_width="match_parent"
@@ -101,7 +90,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:focusableInTouchMode="true"
                     app:boxStrokeWidthFocused="2dp"
@@ -110,7 +98,8 @@
                     app:errorEnabled="true"
                     app:errorIconDrawable="@drawable/ic_error"
                     app:hintTextColor="@color/black"
-                    app:startIconTint="@color/black">
+                    app:startIconTint="@color/black"
+                    android:layout_margin="@dimen/margin">
 
 
                     <com.hardextech.store.utils.MyCustomEditText
@@ -128,7 +117,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="@dimen/marginTop"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:focusableInTouchMode="true"
                     app:boxStrokeWidthFocused="2dp"
@@ -136,7 +124,11 @@
                     app:endIconTint="@color/black"
                     app:errorEnabled="true"
                     app:errorIconDrawable="@drawable/ic_error"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="@color/black"
+                    android:layout_margin="@dimen/margin"
+                    app:helperTextEnabled="true"
+                    app:helperText="* Required"
+                    app:helperTextTextColor="@color/jardsColor">
 
                     <com.hardextech.store.utils.MyCustomEditText
                         android:layout_width="match_parent"
@@ -146,11 +138,11 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userDeliveryAddress"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="@dimen/marginTop"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:focusableInTouchMode="true"
                     app:boxStrokeWidthFocused="2dp"
@@ -158,24 +150,30 @@
                     app:endIconTint="@color/black"
                     app:errorEnabled="true"
                     app:errorIconDrawable="@drawable/ic_error"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="@color/black"
+                    android:layout_margin="@dimen/margin"
+                    app:helperTextEnabled="true"
+                    app:helperText="* Required"
+                    app:helperTextTextColor="@color/jardsColor">
 
                     <com.hardextech.store.utils.MyCustomEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="Contact Address"
-                        android:inputType="textImeMultiLine" />
+                        android:hint="Delivery Address"
+                        android:inputType="text|textLongMessage" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
+                    android:id="@+id/userGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_margin="@dimen/margin"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:orientation="horizontal">
 
                     <com.hardextech.store.utils.MyCustomRadioButton
+                        android:id="@+id/rbMale"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -184,10 +182,12 @@
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="MALE"
+                        android:checked="true"
                         android:textAllCaps="true"
                         android:textColor="@drawable/gender_text_color_selector" />
 
                     <com.hardextech.store.utils.MyCustomRadioButton
+                        android:id="@+id/rbFemale"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/marginStart"
@@ -201,25 +201,22 @@
                         android:textColor="@drawable/gender_text_color_selector" />
 
                 </RadioGroup>
-
                 <com.hardextech.store.utils.MyCustomButton
+                    android:id="@+id/userProfile_saveButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginStart"
-                    android:layout_marginTop="30dp"
+                    android:layout_margin="@dimen/margin"
                     android:layout_marginEnd="@dimen/marginEnd"
                     android:background="@drawable/button_background"
                     android:foreground="?attr/selectableItemBackground"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Submit"
+                    android:text="Update Details"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/headerTextSize" />
 
             </LinearLayout>
 
-
-        </ScrollView>
-
-</LinearLayout>
+</ScrollView>

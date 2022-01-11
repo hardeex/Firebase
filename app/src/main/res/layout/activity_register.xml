@@ -1,217 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.RegisterActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:scrollbars="none"
-        android:padding="10dp"
-        android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerFirstName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerLastName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperText="Enter a valid Gmail address"
+            app:helperTextEnabled="true"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerConfirmEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperText="Confirm your Gmail address"
+            app:helperTextEnabled="true"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperText="Minimum of 8 characters or alphanumeric"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerConfirmPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="?attr/actionBarSize"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerFirstName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="clear_text"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error"
-                app:helperText="Minimum of 3 characters"
-                app:helperTextEnabled="true">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/first_name"
-                    android:inputType="textPersonName" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerLastName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="clear_text"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error"
-                app:helperText="Minimum of 3 characters"
-                app:helperTextEnabled="true">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/last_name"
-                    android:inputType="textPersonName" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="clear_text"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error"
-                app:helperText="Enter a valid Gmail address"
-                app:helperTextEnabled="true">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerConfirmEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="clear_text"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error"
-                app:helperText="Confirm your Gmail address"
-                app:helperTextEnabled="true">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Confirm Email"
-                    android:inputType="textEmailAddress" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="password_toggle"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error"
-                app:helperText="Minimum of 8 characters or alphanumeric">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/register_password"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registerConfirmPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:focusableInTouchMode="true"
-                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-                app:endIconCheckable="true"
-                app:endIconMode="password_toggle"
-                app:errorEnabled="true"
-                app:errorIconDrawable="@drawable/ic_error">
-
-                <com.hardextech.store.utils.MyCustomEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/confirm_password"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbRegisterTerms"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:checked="false"
+                android:gravity="center" />
 
-                <androidx.appcompat.widget.AppCompatCheckBox
-                    android:id="@+id/cbRegisterTerms"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:checked="false"
-                    android:gravity="center" />
-
-                <com.hardextech.store.utils.MyCustomTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/i_agree_with_the_terms_amp_condition"
-                    android:textSize="@dimen/defaultTextSize" />
-
-            </LinearLayout>
-
-
-            <com.hardextech.store.utils.MyCustomButton
-                android:id="@+id/btnRegister"
-                android:layout_width="match_parent"
+            <com.hardextech.store.utils.MyCustomTextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:background="@drawable/button_background"
-                android:foreground="?attr/selectableItemBackground"
-                android:gravity="center"
-                android:text="@string/register"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
+                android:text="@string/i_agree_with_the_terms_amp_condition"
+                android:textSize="@dimen/defaultTextSize" />
+
+        </LinearLayout>
+
+        <com.hardextech.store.utils.MyCustomButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/defaultTextSize"
+            android:layout_margin="@dimen/margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin">
+
+            <com.hardextech.store.utils.MyCustomTextView
+                android:id="@+id/tvHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account?"
                 android:textSize="@dimen/defaultTextSize" />
 
             <com.hardextech.store.utils.MyCustomTextView
                 android:id="@+id/tvHaveRegisterAccount"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="@dimen/marginStart"
-                android:layout_marginEnd="@dimen/marginEnd"
-                android:gravity="center"
-                android:text="@string/already_have_an_account_click_here_to_login"
-                android:textSize="@dimen/defaultTextSize" />
+                android:text="LOGIN"
+                android:textColor="@color/jardsColorTint"
+                android:textSize="@dimen/headerTextSize"
+                android:layout_marginStart="@dimen/margin"/>
         </LinearLayout>
-    </ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

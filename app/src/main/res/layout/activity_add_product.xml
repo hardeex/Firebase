@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ui.activities.AddProductActivity"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp">
+
+        <FrameLayout
+            android:id="@+id/fl_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_product_header_image_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_product_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorProductBackground"
+                android:contentDescription="Upload the products for sales"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_add_product_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/add_update_product_icon_padding"
+                android:src="@drawable/ic_add_product_image" />
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Product Title"
+                android:inputType="text"
+                android:textSize="@dimen/defaultTextSize"
+                android:padding="@dimen/padding"
+                android:imeOptions="actionDone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Product Price (NGN)"
+                android:inputType="number"
+                android:textSize="@dimen/defaultTextSize"
+                android:padding="@dimen/padding"
+                android:digits="0123456789,."
+                android:imeOptions="actionDone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Description"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:textSize="@dimen/defaultTextSize"
+                android:padding="@dimen/padding"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error">
+
+            <com.hardextech.store.utils.MyCustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Quantity"
+                android:inputType="number"
+                android:textSize="@dimen/defaultTextSize"
+                android:padding="@dimen/padding"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.hardextech.store.utils.MyCustomButton
+            android:id="@+id/btnSubmit_addProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/headerTextSize"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

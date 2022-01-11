@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ui.activities.SettingActivity"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fragment_header_bkgrd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_header_height">
+            
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/header_background"
+                android:scaleType="fitXY" />
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_settings_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/setting_back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_arrow"
+                    android:padding="@dimen/padding" />
+
+                <TextView
+                    android:id="@+id/tv_title_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/headerTextSize"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/fragment_header_bkgrd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-75dp">
+
+            <ImageView
+                android:id="@+id/settings_userProfileIPicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_profile_picture"
+                android:layout_margin="3dp"
+                android:scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_outline"/>
+        </FrameLayout>
+
+        <com.hardextech.store.utils.MyCustomTextView
+            android:id="@+id/tvEditUserDetails_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_header_bkgrd"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:background="@drawable/settings_edit_text_gray_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/padding"
+            android:text="Edit"
+            android:textAllCaps="true"
+            android:textColor="@color/jardsColor"
+            android:textSize="@dimen/headerTextSize"
+            android:textStyle="bold" />
+
+        <com.hardextech.store.utils.MyCustomTextView
+            android:id="@+id/setting_fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/defaultTextSize"
+            android:textStyle="bold" />
+
+        <com.hardextech.store.utils.MyCustomTextView
+            android:id="@+id/setting_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/setting_fullName"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/defaultTextSize"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="bold"/>
+
+        <com.hardextech.store.utils.MyCustomTextView
+            android:id="@+id/setting_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/defaultTextSize"
+            android:textStyle="bold" />
+
+        <com.hardextech.store.utils.MyCustomTextView
+            android:id="@+id/setting_mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/setting_email"
+            android:layout_margin="@dimen/margin"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/defaultTextSize"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/ll_Setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/setting_mobileNumber"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/settings_edit_text_gray_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/padding">
+
+            <com.hardextech.store.utils.MyCustomTextView
+                android:id="@+id/setting_deliveryAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address(es) "
+                android:layout_weight="1"
+                android:textSize="@dimen/defaultTextSize"
+                android:textAllCaps="true"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_forward_arrow_right_24" />
+        </LinearLayout>
+
+        <com.hardextech.store.utils.MyCustomButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_Setting"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="Logout"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/defaultTextSize" />
+
+    </RelativeLayout>
+</ScrollView>

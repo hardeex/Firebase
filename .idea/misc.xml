@@ -6,24 +6,55 @@
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/background_button.xml" value="0.2111111111111111" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/button_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/button_layout.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/fragment_bottom_color.xml" value="0.20185185185185187" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/gender_tab_selector.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/gender_tab_selectors.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/gender_tab_text_color_selector.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/gender_tab_text_selector.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/gender_text_color_selector.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/header_background.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_add_product_image.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_product_store_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_vector_add_product.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/ic_vector_delete.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/item_dashboard_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/item_grey_border_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/rv_item_image_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/settings_edit_text_gray_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/splash_screen_background.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/drawable/user_image_outline.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout-v23/activity_register.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_add_product.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_base.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_cart_list.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_dashboard.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_dashboard_product_details.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_forgot_paasword.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_login.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
-        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_product_details.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_setting.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_splash_screen.xml" value="0.1953125" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/activity_user_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_base.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_dashboard.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_home.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_notifications.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_orders.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/fragment_products.xml" value="0.20615384615384616" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/item_cart_layout.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/item_list_dashboard_layout.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/item_list_layout.xml" value="0.209375" />
         <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/layout/progress_dialogue.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/menu/add_products_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/menu/bottom_nav_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/menu/dashboard_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/HardexTechnologies/AndroidStudioProjects/Kotlin/Store/app/src/main/res/menu/edit_product_details_menu.xml" value="0.209375" />
       </map>
     </option>
   </component>

@@ -3,12 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin">
 
     <ProgressBar
         android:id="@+id/progressDialogue"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:indeterminateTint="@color/jardsColorTint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvProgressDialogue"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +24,7 @@
         android:text="Please Wait..."
         android:textColor="@color/black"
         android:textSize="@dimen/defaultTextSize"
+        android:layout_marginEnd="@dimen/margin"
         app:layout_constraintBottom_toBottomOf="@+id/progressDialogue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/progressDialogue"

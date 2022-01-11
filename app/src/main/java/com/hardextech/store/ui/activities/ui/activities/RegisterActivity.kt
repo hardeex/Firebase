@@ -1,4 +1,4 @@
-package com.hardextech.store.activities
+package com.hardextech.store.ui.activities.ui.activities
 
 
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatCheckBox
+import androidx.core.content.ContextCompat
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.AuthResult
@@ -47,6 +48,9 @@ class RegisterActivity() : BaseActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // setting the back arrow symbol
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back_arrow)
+
+        // changing the action color to the exact gradient at the bottomNav
+        supportActionBar!!.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.fragment_bottom_color))
 
         // initializing the variables
         initiateVariables()
@@ -193,7 +197,6 @@ class RegisterActivity() : BaseActivity() {
 
                             // storing the user details
                             val userDetails = User(
-                                // TODO: Make the collection identifier from the Firestore email instead of the uid
                                 firebaseUser.uid,
                                 registerFirstName.editText?.text.toString().trim { it<=' ' },
                                 registerLastName.editText?.text.toString().trim { it<=' ' },

@@ -1,17 +1,13 @@
-package com.hardextech.store.activities
+package com.hardextech.store.ui.activities.ui.activities
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.WindowInsets
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 import com.hardextech.store.R
 
 class ForgotPasswordActivity : BaseActivity() {
@@ -22,7 +18,7 @@ class ForgotPasswordActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forgot_paasword)
+        setContentView(R.layout.activity_forgot_password)
 
         hideActionBar()
         initiateVariables()

@@ -6,9 +6,9 @@
         android:angle="360"
         android:startColor="@color/jardsColorTint"
         android:endColor="@color/jardsColor"
-        android:gradientRadius="8dp"
+        android:gradientRadius="45dp"
         android:type="linear"/>
 
-    <corners android:radius="6dp"/>
+    <corners android:radius="20dp"/>
 
 </shape>

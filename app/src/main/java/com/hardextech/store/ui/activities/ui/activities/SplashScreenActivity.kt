@@ -1,4 +1,4 @@
-package com.hardextech.store.activities
+package com.hardextech.store.ui.activities.ui.activities
 
 
 import android.annotation.SuppressLint
@@ -25,9 +25,11 @@ class SplashScreenActivity : AppCompatActivity() {
 
         // set the timer for the splash screen
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
             finish()
-        }, 2500) // End of the loop for threading
+        }, 1500) // End of the loop for threading
+
+
     } // end of the onCreate method
 
     private fun hideActionBar() {

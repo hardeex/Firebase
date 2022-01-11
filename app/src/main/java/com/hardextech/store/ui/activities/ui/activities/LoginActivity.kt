@@ -1,4 +1,4 @@
-package com.hardextech.store.activities
+package com.hardextech.store.ui.activities.ui.activities
 
 import android.content.Intent
 import android.os.Build
@@ -10,7 +10,6 @@ import android.view.WindowInsets
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.widget.AppCompatCheckBox
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,6 +17,7 @@ import com.google.firebase.ktx.Firebase
 import com.hardextech.store.R
 import com.hardextech.store.firestore.FirestoreClass
 import com.hardextech.store.model.User
+import com.hardextech.store.utils.Constants
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
 
@@ -26,7 +26,6 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
     }
     private lateinit var loginEmail: TextInputLayout
     private lateinit var loginPassword: TextInputLayout
-    private lateinit var cbRememberMe: AppCompatCheckBox
     private lateinit var loginForgotPsd: Button
     private lateinit var btnLogin: Button
     private lateinit var tvHaveAccount: TextView
@@ -39,7 +38,6 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         initiateVariables()
 
         // initiate the onClickListener from the activity
-        cbRememberMe.setOnClickListener(this)
         loginForgotPsd.setOnClickListener(this)
         btnLogin.setOnClickListener(this)
         tvHaveAccount.setOnClickListener(this)
@@ -50,7 +48,6 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
     private fun initiateVariables() {
         loginEmail = findViewById(R.id.loginEmail)
         loginPassword = findViewById(R.id.loginPassword)
-        cbRememberMe = findViewById(R.id.checkbox_rememberMe)
         loginForgotPsd = findViewById(R.id.btnForgotPassword)
         btnLogin = findViewById(R.id.btnLogin)
         tvHaveAccount = findViewById(R.id.tvHaveAnAccount)
@@ -157,9 +154,6 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                     startActivity(Intent(this, RegisterActivity::class.java))
                 }
 
-                R.id.checkbox_rememberMe->{
-
-                }
             }
         }
     }
@@ -175,10 +169,13 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         if (user != null) {
             Log.i("Email: ", user.email)
         }
-        if (user?.profileCompletion==0){
-            startActivity(Intent(this@LoginActivity, UserProfileActivity::class.java))
-        }else{
-            startActivity(Intent(this, MainActivity::class.java))
+        if (user != null) {
+            if (user.profileCompletion==0){
+                startActivity(Intent(this@LoginActivity, UserProfileActivity::class.java)
+                    .putExtra(Constants.EXTRA_USER_DETAILS, user))
+            }else{
+                startActivity(Intent(this, DashboardActivity::class.java))
+            }
         }
         finish()
     }

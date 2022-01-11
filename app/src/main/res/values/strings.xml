@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">Store</string>
-    <string name="caramel_store">CARAMEL STORE</string>
+    <string name="app_name">JDD Store</string>
+    <string name="jdd_store">JDD STORE</string>
     <string name="login_email">Email (myemail@domain.com)</string>
     <string name="login_password">Password</string>
     <string name="remember_me">Remember Me</string>
     <string name="login">Login</string>
-    <string name="don_t_have_an_account_click_here_to_register">Don\'t Have An Account? Click Here To REGISTER</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -14,7 +13,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="i_agree_with_the_terms_amp_condition">I agree to the  <u>Term &amp; Condition</u></string>
     <string name="register">Create Account</string>
-    <string name="already_have_an_account_click_here_to_login">Already Have An Account? Click Here To LOGIN</string>
     <string name="create_an_account">CREATE AN ACCOUNT</string>
     <string name="jards_design_amp_development"><![CDATA[Jards Designs & Development]]></string>
     <string name="first_name_error">First Name can not be empty</string>
@@ -27,5 +25,21 @@
     <string name="password_mismatch">Password do not match!</string>
     <string name="registration_succesful">Your Registration is successful </string>
     <string name="agree_terms">You have not agree to the Terms &amp; Condition</string>
+
+    <string name="user_profile_action_bar_title">COMPLETE PROFILE</string>
+    <string name="user_profile_edit_action_bar_title">EDIT PROFILE</string>
+    <string name="out_of_stock">OUT OF STOCK…</string>
+
+
+    <!--    <string name="title_activity_dashboard">DashboardActivity</string>-->
+    <string name="title_orders">Orders</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_products">Products</string>
+    <string name="please_click_back_again_to_exist">Please click back again to exist</string>
+    <string name="no_products_added_yet">No Product Added Yet...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_product_description">Product Description</string>
+    <string name="lbl_product_details_stock_quantity">Product Quantity</string>
 
 </resources>

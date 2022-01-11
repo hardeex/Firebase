@@ -1,155 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.LoginActivity"
+    tools:context=".ui.activities.ui.activities.LoginActivity"
     android:background="@color/white">
 
-    <FrameLayout
-        android:id="@+id/loginFrameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/login_activity_header_height"
-        android:background="@drawable/header_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="50dp"
-            android:contentDescription="@string/caramel_store"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ecommerce_store" />
-
-        <com.hardextech.store.utils.MyCustomTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="80dp"
-            android:text="@string/caramel_store"
-            android:textColor="@color/white"
-            android:textSize="@dimen/headerTextSize" />
-    </FrameLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/loginEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginFrameLayout"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:focusableInTouchMode="true"
-        app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
-        app:endIconMode="clear_text"
-        app:endIconTint="@color/black"
-        app:errorEnabled="true"
-        app:errorIconDrawable="@drawable/ic_error"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/ic_baseline_mark_email_read_24"
-        app:startIconTint="@color/black"
-        android:padding="@dimen/padding">
-
-
-        <com.hardextech.store.utils.MyCustomEditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/login_email"
-            android:inputType="textEmailAddress"
-            android:textSize="@dimen/defaultTextSize" />
+            android:orientation="vertical">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <FrameLayout
+                android:id="@+id/loginFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_activity_header_height"
+                android:background="@drawable/header_background">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/loginPassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marginTop"
-        android:focusableInTouchMode="true"
-        app:boxStrokeWidthFocused="2dp"
-        app:endIconMode="password_toggle"
-        app:endIconTint="@color/black"
-        app:errorEnabled="true"
-        app:errorIconDrawable="@drawable/ic_error"
-        app:hintTextColor="@color/black"
-        app:startIconDrawable="@drawable/ic_baseline_security_24"
-        app:startIconTint="@color/black"
-        android:layout_below="@id/loginEmail"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:padding="@dimen/padding">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/jdd_store"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ecommerce_store" />
 
+                <com.hardextech.store.utils.MyCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="165dp"
+                    android:layout_marginTop="80dp"
+                    android:text="@string/jdd_store"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/headerTextSize" />
+            </FrameLayout>
 
-        <com.hardextech.store.utils.MyCustomEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/register_password"
-            android:textSize="18sp"
-            android:inputType="textPassword" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/checkbox_rememberMe"
-        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginPassword"
-        android:layout_marginStart="@dimen/marginStart"
-        android:buttonTint="@color/black"
-        android:text="@string/remember_me" />
-
-    <Button
-        android:id="@+id/btnForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginPassword"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:background="#00000000"
-        android:text="@string/forgot_password"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        tools:ignore="RelativeOverlap" />
-
-    <com.hardextech.store.utils.MyCustomButton
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnForgotPassword"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:background="@drawable/button_background"
-        android:foreground="?attr/selectableItemBackground"
-        android:gravity="center"
-        android:padding="8dp"
-        android:paddingTop="@dimen/paddingTop"
-        android:paddingBottom="@dimen/paddingBottom"
-        android:text="@string/login"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="@dimen/defaultTextSize" />
-
-    <com.hardextech.store.utils.MyCustomTextView
-        android:id="@+id/tvHaveAnAccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnLogin"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="@dimen/marginEnd"
-        android:gravity="center"
-        android:text="@string/don_t_have_an_account_click_here_to_register"
-        android:textSize="@dimen/defaultTextSize" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loginEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginEnd="@dimen/marginEnd"
+                android:focusableInTouchMode="true"
+                app:boxStrokeWidthFocused="@dimen/boxStrokeWidthFocused"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_mark_email_read_24"
+                app:startIconTint="@color/black">
 
 
+                <com.hardextech.store.utils.MyCustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/defaultTextSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loginPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:focusableInTouchMode="true"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_security_24"
+                app:startIconTint="@color/black"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginEnd="@dimen/marginEnd">
 
 
-</RelativeLayout>
+                <com.hardextech.store.utils.MyCustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/register_password"
+                    android:textSize="18sp"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="#00000000"
+                    android:text="@string/forgot_password"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sub_heading_text"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/marginEnd" />
+
+
+            <com.hardextech.store.utils.MyCustomButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginEnd="@dimen/marginEnd"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/defaultTextSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin"
+                android:padding="@dimen/padding"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginEnd="@dimen/marginEnd"
+                android:gravity="center">
+
+                <com.hardextech.store.utils.MyCustomTextView
+                    android:id="@+id/tvNoAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't Have An Account? "
+                    android:textSize="@dimen/defaultTextSize" />
+
+                <com.hardextech.store.utils.MyCustomTextView
+                    android:id="@+id/tvHaveAnAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="@dimen/headerTextSize"
+                    android:textAllCaps="true"
+                    android:textColor="@color/jardsColor"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</ScrollView>
